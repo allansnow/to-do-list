@@ -1,0 +1,148 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+button {
+cursor: pointer;
+}
+
+body {
+background-image: linear-gradient(120deg, rgb(0, 60, 255), rgb(0, 217, 255));
+color: white;
+font-family: "Poppins", sans-serif;
+min-height: 87.5vh;
+}
+
+.header {
+font-size: 2.5rem;
+font-weight: 600;
+margin-top: 3em;
+}
+
+form,
+.header {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+form {
+margin-top: 4em;
+}
+
+form input, 
+form button {
+padding: .25em;
+font-size: 2rem;
+border: none;
+background: white;
+outline: none;
+}
+
+form button {
+color: rgb(0, 217, 255);
+background-color: white;
+transition: all 0.3s ease;
+}
+
+form button:hover {
+color: white;
+background-color:rgb(0, 217, 255);
+}
+
+.todo-ul {
+list-style: none;
+min-width: 20%;
+margin-top: 3em;
+}
+
+.tasks-container {
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+.todo-item {
+background-color: white;
+margin: .75em;
+color: black;
+font-size: 1.2rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+transition: all 700ms ease;
+}
+
+.todo-item li {
+flex-grow: 1;
+}
+
+.check-btn,
+.delete-btn {
+background-color: rgb(0, 60, 255);
+color: white;
+border: none;
+padding: 1em;
+font-size: 1rem;
+}
+
+.delete-btn {
+background-color:rgb(255, 94, 0);
+}
+
+.task-li {
+padding: 0 0.6em;
+}
+
+.fa-trash,
+.fa-check {
+pointer-events: none;
+}
+
+.completed {
+text-decoration: line-through;
+opacity: .5;
+}
+
+.fall {
+transform: translateY(8rem) rotateZ(20deg);
+opacity: 0;
+}
+
+.filter-tasks {
+border: none;
+outline: none;
+appearance: none;
+padding: .95em;
+margin-left: 1em;
+color:rgb(0, 60, 255);
+font-size: 1.1rem;
+cursor: pointer;
+width: 12rem;
+}
+
+.filter-tasks option {
+border: none;
+}
+
+.select {
+position: relative;
+}
+
+.select::after {
+content: "\25BC";
+position: absolute;
+background: rgb(0, 217, 255);
+top: 0;
+right: 0;
+padding: .89em;
+pointer-events: none;
+transition: 300ms ease;
+}
+
+.select:hover::after {
+background-color: white;
+color:rgb(0, 217, 255);
+}

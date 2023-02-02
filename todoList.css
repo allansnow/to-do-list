@@ -146,3 +146,42 @@ transition: 300ms ease;
 background-color: white;
 color:rgb(0, 217, 255);
 }
+
+@media (min-width: 675px) {
+.header {
+font-size: 7rem;
+}
+
+form input {
+flex-grow: 2;
+padding: 1em;
+}
+
+form button {
+padding: 1em;
+}
+
+.select {
+flex-grow: 1;
+font-size: 1.95em;
+}
+
+.filter-tasks {
+padding: 2.3em;
+}
+
+.task-li {
+padding: .5em 2em;
+font-size: 1.5rem;
+}
+
+.check-btn, .delete-btn {
+font-size: 1.5rem;
+padding: 1.8em;
+}
+
+body {
+margin: 2em;
+}
+
+}

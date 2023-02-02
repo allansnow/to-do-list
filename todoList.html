@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>todo list</title>
+<title>To Do list</title>
 <link rel="stylesheet" href="todoList.css"> 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -9,16 +9,18 @@
 <script src="https://kit.fontawesome.com/6a30e8b604.js" crossorigin="anonymous"></script>
 </head>
 <body>
-<h2 class="header">Some To Do List</h2>
+<h2 class="header">To Do List</h2>
 <form>
   <input class="todo-input" type="text">
   <button class="todo-button">
   <i class="fas fa-plus-square"></i></button>
 <div class="select">
 <select name="tasks" class="filter-tasks">
+  <optgroup>
 <option value="all">Todos</option>
 <option value="completed">Completos</option>
 <option value="uncompleted">Incompletos</option>
+</optgroup>
 </select>
 </div>
 </form>

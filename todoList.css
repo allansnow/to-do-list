@@ -147,7 +147,7 @@ background-color: white;
 color:rgb(0, 217, 255);
 }
 
-@media (min-width: 675px) {
+@media (max-width: 675px) {
 .header {
 font-size: 7rem;
 }
